@@ -7,22 +7,22 @@ from models import setup_db, Actors, Movies
 from datetime import date
 
 casting_assistant_auth_header = {
-    'Authorization': 'bearer '
+    'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx4MWtINlNIdnh1SEpXZ1k3SUxfdSJ9.eyJpc3MiOiJodHRwczovL2Rldi1ycTZ6Zm10M3BodTUyY29tLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDVhNjg4ODgzMDE1YTk2ODdkYWFlODgiLCJhdWQiOiJjYXBzdG9uZSIsImlhdCI6MTY4Mzg5MDI3OCwiZXhwIjoxNjgzODk3NDc4LCJhenAiOiJFZ3hJQ1ltTVVmMVYwdWdjVmpTZlJVUVFHMDVLNjVoTCIsInNjb3BlIjoiIn0.hpACwXrUIlg1zM7lXThVM2EZgW-fORba230r5R-sRHEOqH_2K1SlR1EegjWKWo9R9y7Z2A9pVwXCg_0nVV7kt11j4nTj67DZvN5hvyEd3_2w0U7fQcx6sk4Glm7sbqxpC-lqjwRtbbh1-XD9S-gh6KdisKq9Kyi1njlbpiUQsUolTPgArfx0H4CH6E_xLvp23F4Y1WJ6HrX7l2TR9RSlyy-vkfz623GRLuPElOI092AdKHqfsshc9V07KyBGMsG8piLYSfc6OWKi_W3p7NCgkzG3h9DkqEOpLDQTsJERwnV1toWpb1I65UTcXSotKCa0Q18hdFnXnIEbALTM0FVt5Q'
 }
 
 casting_director_auth_header = {
-    'Authorization': 'bearer '
+    'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx4MWtINlNIdnh1SEpXZ1k3SUxfdSJ9.eyJpc3MiOiJodHRwczovL2Rldi1ycTZ6Zm10M3BodTUyY29tLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDJkNzRhY2MxNTZlODg4M2VjYmU5MmMiLCJhdWQiOiJjYXBzdG9uZSIsImlhdCI6MTY4Mzg5MDM3NiwiZXhwIjoxNjgzODk3NTc2LCJhenAiOiJFZ3hJQ1ltTVVmMVYwdWdjVmpTZlJVUVFHMDVLNjVoTCIsInNjb3BlIjoiIn0.VuqwVCU9Jb8lrb8FjUzX4ORJhPEijX74w0YAEDXft0NVvKYCL1EYmpu5juRDUrWCx58W1VKYqX-N4o0aYo-Bbdo2YhgziPdDLGzoU4h9oTb8jYQ57Vb4Kme3rOq7Y3DRdSOsyS6NjPEAZOboZ8ZYD_j9WXRa53EnuhgmDu9Rvf6vsZBM1fIF-5VODjJ4Nst0Cwdpn2oD6gsiSo33TdnYTUt1Z_LSdR5HYpem8yIjp2A_zmFdoLWeWg0zhx-kdvUE0pOUVUHx9K1YUdqsIlIKa3COJfk7fpABvTCgZEJs7KqivK_oEeAUdyOHAFe57XRRwBWdfBsGVgiPyX4vPNDllQ' 
 }
 
 executive_producer_auth_header = {
-    'Authorization': 'bearer '
+    'Authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ikx4MWtINlNIdnh1SEpXZ1k3SUxfdSJ9.eyJpc3MiOiJodHRwczovL2Rldi1ycTZ6Zm10M3BodTUyY29tLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDMyZGJmZTUyZmI3NjdmN2VhZWFkMGEiLCJhdWQiOiJjYXBzdG9uZSIsImlhdCI6MTY4Mzg5MDQ1NiwiZXhwIjoxNjgzODk3NjU2LCJhenAiOiJFZ3hJQ1ltTVVmMVYwdWdjVmpTZlJVUVFHMDVLNjVoTCIsInNjb3BlIjoiIn0.GyRXbwyCcXboQJJoEz5ljP5jYbsruwYS8KB-C-SQI_VJGMofkc2JAX2Y2PJ77EA8ketTbCJZ53y2LsDfhRXrcpjyleUdgnmxGvZQLGONYNLJQuYcd0J_E6WXsqX3gDInV4hwcLCfz9vKBYbubq8j6Dkzw5mvMAwFhP7qUnB4FpqG9Qpu55tY5RhoWtk1JVhvyNIBRdqlyH20BAouO4wumA2-msYePteGvcFN5sl5XnKpxqShCM9eIgsndBazxWe1BFFka80pQGXgNwYeFJaRPsWTWC9lId0UaAJJwEhoRI1Ob6KOS1QDr0vuAnR-5hHG28YSo3zGY86Ru28irIP4rw'
 }
 
 class CapstoneTestCase(unittest.TestCase):
     def setUp(self):
         self.app = create_app()
         self.client = self.app.test_client
-        self.database_path = 'postgresql://postgres:Delphie06!@localhost:5432/Capstone_Test'
+        self.database_path = 'postgresql://postgres:<PASSWORD>@localhost:5432/Capstone_Test'
         setup_db(self.app, self.database_path)
 
         with self.app.app_context():
