@@ -4,7 +4,6 @@ charset-normalizer==2.0.12
 click==8.0.4
 colorama==0.4.5
 cryptography==40.0.2
-dataclasses==0.8
 defusedxml==0.7.1
 ecdsa==0.18.0
 Flask==2.0.3
