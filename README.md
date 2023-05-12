@@ -22,6 +22,10 @@ pip install -r requirements.txt
 - open the config.py file and locate the variable 'SQLALCHEMY_DATABASE_URI'
 - replace it with your url using the following format: "postgres://{username}:{password}@{host_and_port}/{database_name}"
 
-3. we can now run the development server using:
+3. start a virtual environment
 
+.\venv\Scripts\activate
+
+4. we can now run the development server
+ 
 flask run
