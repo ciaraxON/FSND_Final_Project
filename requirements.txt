@@ -1,7 +1,6 @@
 alembic==1.7.7
 click==8.0.4
 colorama==0.4.5
-dataclasses==0.8
 ecdsa==0.18.0
 Flask==2.0.3
 Flask-Cors==3.0.10
