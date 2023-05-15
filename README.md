@@ -32,7 +32,7 @@ flask run
 
 ## API Documentation
 
-# GET /actors
+### GET /actors
 
 - Fetches a dictionary of categories in which the keys are the ids and the value is the corresponding string of the category
 - Request Arguments: None
