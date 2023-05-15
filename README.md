@@ -84,3 +84,20 @@ https://fsndcapstone.herokuapp.com/
 - Edits/updates a specifics movies data in the database
 - Request Arguments: id - integer
 - Returns: the success response and updated movie id
+
+## Authentication
+
+### Existing Roles
+They are 3 Roles with distinct permission sets:
+
+# Casting Assistant:
+view:actors: Can see all actors
+view:movies: Can see all movies
+# Casting Director (everything from Casting Assistant and)
+create:actors: Can create new Actors
+edit:actors: Can edit existing Actors
+delete:actors: Can remove existing Actors from database
+edit:movies: Can edit existing Movies
+# Exectutive Dircector (everything from Casting Director and)
+create:movies: Can create new Movies
+delete:movies: Can remove existing Motives from database
