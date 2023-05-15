@@ -29,3 +29,11 @@ pip install -r requirements.txt
 4. we can now run the development server
  
 flask run
+
+## API Documentation
+
+# GET /actors
+
+- Fetches a dictionary of categories in which the keys are the ids and the value is the corresponding string of the category
+- Request Arguments: None
+- Returns: An object with a single key actors, that contains the objects of id, name, age and gender
