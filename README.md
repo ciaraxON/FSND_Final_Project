@@ -37,3 +37,46 @@ flask run
 - Fetches a dictionary of categories in which the keys are the ids and the value is the corresponding string of the category
 - Request Arguments: None
 - Returns: An object with a single key actors, that contains the objects of id, name, age and gender
+
+### GET /movies
+
+- Fetches a dictionary of categories in which the keys are the ids and the value is the corresponding string of the category
+- Request Arguments: None
+- Returns: An object with a single key movies, that contains the objects of id, title and release_date
+
+### DELETE /actors/<int:id>
+
+- Deletes a specified actor using the id of the actpr
+- Request Arguments: id - integer
+- Returns: the success response and deleted actor id
+
+### DELETE /movies/<int:id>
+
+- Deletes a specified movie using the id of the movie
+- Request Arguments: id - integer
+- Returns: the success response and deleted movie id
+
+### POST /actors
+
+- Sends a post request in order to add a new actor
+- Request body:
+- Returns: the success response and the new actor id
+
+
+### POST /movies
+
+- Sends a post request in order to add a new movie
+- Request body:
+- Returns: the success response and the new movie id
+
+### PATCH /actors/<actor_id>
+
+- Edits/updates a specifics actors data in the database
+- Request Arguments: id - integer
+- Returns: the success response and updated actor id
+
+### PATCH /movies/<movie_id
+
+- Edits/updates a specifics movies data in the database
+- Request Arguments: id - integer
+- Returns: the success response and updated movie id
