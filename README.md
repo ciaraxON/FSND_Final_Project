@@ -91,13 +91,13 @@ https://fsndcapstone.herokuapp.com/
 They are 3 Roles with different permission sets:
 
 #### Casting Assistant:
-GET:actors: Can see all actors
-GET:movies: Can see all movies
+- GET:actors: Can see all actors
+- GET:movies: Can see all movies
 #### Casting Director (everything from Casting Assistant and)
-POST:actors: Can create new Actors
-PATCH:actors: Can edit existing Actors
-DELETE:actors: Can remove existing Actors from database
-PATCH:movies: Can edit existing Movies
+- POST:actors: Can create new Actors
+- PATCH:actors: Can edit existing Actors
+- DELETE:actors: Can remove existing Actors from database
+- PATCH:movies: Can edit existing Movies
 #### Exectutive Dircector (everything from Casting Director and)
-POST:movies: Can create new Movies
-DELETE:movies: Can remove existing Motives from database
+- POST:movies: Can create new Movies
+- DELETE:movies: Can remove existing Motives from database
